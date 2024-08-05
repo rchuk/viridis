@@ -1,4 +1,4 @@
 cmake_minimum_required(VERSION 3.28)
 project(viridis_externals)
 
-
+add_subdirectory(SDL)
