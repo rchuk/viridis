@@ -9,4 +9,4 @@
 	url = https://github.com/icaven/glm.git
 [submodule "externals/glew"]
 	path = externals/glew
-	url = https://github.com/Perlmint/glew-cmake.git
+	url = https://github.com/rchuk/glew-cmake.git
