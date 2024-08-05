@@ -8,3 +8,5 @@ add_library(viridis_core STATIC
 
 target_include_directories(viridis_core PUBLIC include)
 target_include_directories(viridis_core PRIVATE include/viridis_core)
+
+target_link_libraries(viridis_core PUBLIC spdlog::spdlog glm)
