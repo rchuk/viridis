@@ -12,6 +12,8 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 #
 
+add_subdirectory(externals)
+
 if (MSVC)
     add_compile_options(/Wall)
 else()
@@ -24,7 +26,6 @@ else()
     add_compile_definitions(DEBUG=0)
 endif()
 
-add_subdirectory(externals)
 add_subdirectory(modules)
 
 if (VIRIDIS_ENABLE_EXAMPLES)
