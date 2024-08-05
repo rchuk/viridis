@@ -15,9 +15,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 add_subdirectory(externals)
 
 if (MSVC)
-    add_compile_options(/Wall)
+    add_compile_options(/W4)
 else()
-    add_compile_options(-Wall -Wextra -pedantic)
+    add_compile_options(-Wall -Wextra -pedantic -Wno-c++98-compat)
 endif()
 
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
